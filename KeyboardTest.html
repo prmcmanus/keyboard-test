@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- saved from url=(0014)about:internet -->
+<head>
+<meta charset="utf-8">
+<title>Keyboard Test</title>
+<style type="text/css">
+#container{
+position:relative;
+width:1250px;
+}
+.key{
+font-weight:bold;
+padding:15px;
+margin:5px;
+border-style:solid;
+color:black;
+border-color:black;
+border-radius:10px;
+background:linear-gradient(#ff0000,#990000);
+}
+
+.Fkey{
+font-weight:bold;
+padding:10px;
+margin:2px;
+border-style:solid;
+color:black;
+border-color:black;
+border-radius:10px;
+background:linear-gradient(#ff0000,#990000);
+}
+
+#Header{
+font-size:50px;
+font-family:"Arial Black", Gadget, sans-serif;
+position:relative;
+top:10px;
+left:350px;
+color:#000000;
+}
+
+a:link{
+color:white;
+text-decoration:none;
+}
+
+a:visited{
+color:white;
+text-decoration:none;
+}
+
+body{
+background:linear-gradient(#666666,#000000);
+background-color:black;
+background-repeat:no-repeat;
+}
+
+.Panel{
+position:absolute;
+left:10px;
+right:120px;
+background-color:white;
+border-radius: 20px;
+}
+
+#Header2{
+font-size:30px;
+font-family:"Arial Black", Gadget, sans-serif;
+cursor:pointer;
+color:#990000;
+position:relative;
+left:50px;
+-webkit-text-stroke: 1px black;
+text-stroke: 1px black;
+}
+#Header2:hover{
+color:#ff0000;
+}
+
+</style>
+<script type="text/javascript">
+
+function keydownHandler(event){	
+	var keyCode = event.keyCode;
+	var keyColor = "#ffff99";
+	var keyColor2 = "#ffff00";
+	event.preventDefault();
+	changeKey(keyCode, keyColor, keyColor2);
+}
+
+function keyupHandler(event){
+	var keyCode = event.keyCode;
+	var keyColor = "#99ff66";
+	var keyColor2 = "#00cc00";
+	event.preventDefault();
+	changeKey(keyCode, keyColor, keyColor2);
+}
+
+function changeKey(keyCode, keyColor, keyColor2){
+//first row
+	if(keyCode===27){
+		var Esckey = document.getElementById("Esckey");
+		Esckey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";	
+	}
+	else if(keyCode===112){
+		var Fonekey = document.getElementById("Fonekey");
+		Fonekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===113){
+		var Ftwokey = document.getElementById("Ftwokey");
+		Ftwokey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===114){
+		var Fthreekey = document.getElementById("Fthreekey");
+		Fthreekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===115){
+		var Ffourkey = document.getElementById("Ffourkey");
+		Ffourkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===116){
+		var Ffivekey = document.getElementById("Ffivekey");
+		Ffivekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===117){
+		var Fsixkey = document.getElementById("Fsixkey");
+		Fsixkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===118){
+		var Fsevenkey = document.getElementById("Fsevenkey");
+		Fsevenkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===119){
+		var Feightkey = document.getElementById("Feightkey");
+		Feightkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===120){
+		var Fninekey = document.getElementById("Fninekey");
+		Fninekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===121){
+		var Ftenkey = document.getElementById("Ftenkey");
+		Ftenkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===122){
+		var Felevenkey = document.getElementById("Felevenkey");
+		Felevenkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===123){
+		var Ftwelvekey = document.getElementById("Ftwelvekey");
+		Ftwelvekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===19){
+		var Pausekey = document.getElementById("Pausekey");
+		Pausekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===44){
+		var Printscreenkey = document.getElementById("Printscreenkey");
+		Printscreenkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===46){
+		var Deletekey = document.getElementById("Deletekey");
+		Deletekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===36){
+		var Homekey = document.getElementById("Homekey");
+		Homekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===33){
+		var PgUpkey = document.getElementById("PgUpkey");
+		PgUpkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===34){
+		var PgDnkey = document.getElementById("PgDnkey");
+		PgDnkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===35){
+		var Endkey = document.getElementById("Endkey");
+		Endkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}	
+	
+//second row
+	else if(keyCode===223){
+		var Thiskey = document.getElementById("Thiskey");
+		Thiskey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===49){
+		var Onekey = document.getElementById("Onekey");
+		Onekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===50){
+		var Twokey = document.getElementById("Twokey");
+		Twokey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===51){
+		var Threekey = document.getElementById("Threekey");
+		Threekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===52){
+		var Fourkey = document.getElementById("Fourkey");
+		Fourkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===53){
+		var Fivekey = document.getElementById("Fivekey");
+		Fivekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===54){
+		var Sixkey = document.getElementById("Sixkey");
+		Sixkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===55){
+		var Sevenkey = document.getElementById("Sevenkey");
+		Sevenkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===56){
+		var Eightkey = document.getElementById("Eightkey");
+		Eightkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===57){
+		var Ninekey = document.getElementById("Ninekey");
+		Ninekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===48){
+		var Zerokey = document.getElementById("Zerokey");
+		Zerokey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===189){
+		var Hyphenkey = document.getElementById("Hyphenkey");
+		Hyphenkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===187){
+		var Equalskey = document.getElementById("Equalskey");
+		Equalskey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===8){
+		var Backspacekey = document.getElementById("Backspacekey");
+		Backspacekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===144){
+		var Numlockkey = document.getElementById("Numlockkey");
+		Numlockkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===111){
+		var Dividekey = document.getElementById("DivideKey");
+		Dividekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===106){
+		var Multiplykey = document.getElementById("Multiplykey");
+		Multiplykey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===109){
+		var Minuskey = document.getElementById("Minuskey");
+		Minuskey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}	
+	
+//third row
+	else if(keyCode===9){
+		var Tabkey = document.getElementById("Tabkey");
+		Tabkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===81){
+		var Qkey = document.getElementById("Qkey");
+		Qkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===87){
+		var Wkey = document.getElementById("Wkey");
+		Wkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===69){
+		var Ekey = document.getElementById("Ekey");
+		Ekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===82){
+		var Rkey = document.getElementById("Rkey");
+		Rkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===84){
+		var Tkey = document.getElementById("Tkey");
+		Tkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===89){
+		var Ykey = document.getElementById("Ykey");
+		Ykey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===85){
+		var Ukey = document.getElementById("Ukey");
+		Ukey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===73){
+		var Ikey = document.getElementById("Ikey");
+		Ikey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===79){
+		var Okey = document.getElementById("Okey");
+		Okey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===80){
+		var Pkey = document.getElementById("Pkey");
+		Pkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===219){
+		var Opensquarebracketkey = document.getElementById("Opensquarebracketkey");
+		Opensquarebracketkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===221){
+		var Closesquarebracketkey = document.getElementById("Closesquarebracketkey");
+		Closesquarebracketkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===13){
+		var Enterkey = document.getElementById("Enterkey");
+		Enterkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Enter2key = document.getElementById("Enter2key");
+		Enter2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Enter3key = document.getElementById("Enter3key");
+		Enter3key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Enter4key = document.getElementById("Enter4key");
+		Enter4key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";		
+	}
+	else if(keyCode===103){
+		var Seven2key = document.getElementById("Seven2key");
+		Seven2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===104){
+		var Eight2key = document.getElementById("Eight2key");
+		Eight2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===105){
+		var Nine2key = document.getElementById("Nine2key");
+		Nine2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===107){
+		var Pluskey = document.getElementById("Pluskey");
+		Pluskey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Plus2key = document.getElementById("Plus2key");
+		Plus2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";		
+	}	
+	
+//forth row
+	else if(keyCode===20){
+		var Capslockkey = document.getElementById("Capslockkey");
+		Capslockkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===65){
+		var Akey = document.getElementById("Akey");
+		Akey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===83){
+		var Skey = document.getElementById("Skey");
+		Skey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===68){
+		var Dkey = document.getElementById("Dkey");
+		Dkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===70){
+		var Fkey = document.getElementById("Fkey");
+		Fkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===71){
+		var Gkey = document.getElementById("Gkey");
+		Gkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===72){
+		var Hkey = document.getElementById("Hkey");
+		Hkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===74){
+		var Jkey = document.getElementById("Jkey");
+		Jkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===75){
+		var Kkey = document.getElementById("Kkey");
+		Kkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===76){
+		var Lkey = document.getElementById("Lkey");
+		Lkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===186){
+		var Semicolonkey = document.getElementById("Semicolonkey");
+		Semicolonkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===192){
+		var Apostrophekeykey = document.getElementById("Apostrophekey");
+		Apostrophekey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===222){
+		var Hashkey = document.getElementById("Hashkey");
+		Hashkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===100){
+		var Four2key = document.getElementById("Four2key");
+		Four2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===101){
+		var Five2key = document.getElementById("Five2key");
+		Five2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===102){
+		var Six2key = document.getElementById("Six2key");
+		Six2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}	
+
+//fith row
+	else if(keyCode===16){
+		var Shiftkey = document.getElementById("Shiftkey");
+		Shiftkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Shift2key = document.getElementById("Shift2key");
+		Shift2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";		
+	}
+	else if(keyCode===220){
+		var Backslashkey = document.getElementById("Backslashkey");
+		Backslashkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}	
+	else if(keyCode===90){
+		var Zkey = document.getElementById("Zkey");
+		Zkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===88){
+		var Xkey = document.getElementById("Xkey");
+		Xkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===67){
+		var Ckey = document.getElementById("Ckey");
+		Ckey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===86){
+		var Vkey = document.getElementById("Vkey");
+		Vkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===66){
+		var Bkey = document.getElementById("Bkey");
+		Bkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===78){
+		var Nkey = document.getElementById("Nkey");
+		Nkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===77){
+		var Mkey = document.getElementById("Mkey");
+		Mkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===188){
+		var Commakey = document.getElementById("Commakey");
+		Commakey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===190){
+		var Fullstopkey = document.getElementById("Fullstopkey");
+		Fullstopkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===191){
+		var Forwardslashkey = document.getElementById("Forwardslashkey");
+		Forwardslashkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===38){
+		var Upkey = document.getElementById("Upkey");
+		Upkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===97){
+		var One2key = document.getElementById("One2key");
+		One2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===98){
+		var Two2key = document.getElementById("Two2key");
+		Two2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===99){
+		var Three2key = document.getElementById("Three2key");
+		Three2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}	
+
+//sixth row
+	else if(keyCode===17){
+		var Ctrlkey = document.getElementById("Ctrlkey");
+		Ctrlkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Ctrl2key = document.getElementById("Ctrl2key");
+		Ctrl2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";		
+	}
+	else if(keyCode===91){
+		var Winkey = document.getElementById("Winkey");
+		Winkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===18){
+		var Altkey = document.getElementById("Altkey");
+		Altkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+		var Altgrkey = document.getElementById("Altgrkey");
+		Altgrkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";		
+	}
+	else if(keyCode===32){
+		var Spacebarkey = document.getElementById("Spacebarkey");
+		Spacebarkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===93){
+		var Oddkey = document.getElementById("Oddkey");
+		Oddkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===37){
+		var Leftkey = document.getElementById("Leftkey");
+		Leftkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===40){
+		var Downkey = document.getElementById("Downkey");
+		Downkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===39){
+		var Rightkey = document.getElementById("Rightkey");
+		Rightkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===96){
+		var Zero2key = document.getElementById("Zero2key");
+		Zero2key.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}
+	else if(keyCode===110){
+		var Dotkey = document.getElementById("Dotkey");
+		Dotkey.style.backgroundImage = "linear-gradient("+keyColor+","+keyColor2+")";
+	}	
+}
+
+function openPanel(elementId){
+	if(document.getElementById(elementId).style.display==="none"){
+		document.getElementById(elementId).style.display = "block";
+	}
+	else{
+		document.getElementById(elementId).style.display = "none";
+	}
+}
+</script>
+
+</head>
+<body>
+
+<a href="#" id="Header">Keyboard Test</a>
+<div id="container">
+<!-- first row -->
+
+<br><br><br>
+<span id="Esckey" class="key">Esc</span>
+<span id="Fonekey" class="Fkey">F1</span>
+<span id="Ftwokey" class="Fkey">F2</span>
+<span id="Fthreekey" class="Fkey">F3</span>
+<span id="Ffourkey" class="Fkey">F4</span>
+<span id="Ffivekey" class="Fkey">F5</span>
+<span id="Fsixkey" class="Fkey">F6</span>
+<span id="Fsevenkey" class="Fkey">F7</span>
+<span id="Feightkey" class="Fkey">F8</span>
+<span id="Fninekey" class="Fkey">F9</span>
+<span id="Ftenkey" class="Fkey">F10</span>
+<span id="Felevenkey" class="Fkey">F11</span>
+<span id="Ftwelvekey" class="Fkey">F12</span>
+<span id="Pausekey" class="Fkey">Pause</span>
+<span id="Printscreenkey" class="Fkey">Prt Sc</span>
+<span id="Deletekey" class="Fkey">Del</span>
+<span id="Homekey" class="Fkey">Home</span>
+<span id="PgUpkey" class="Fkey">PgUp</span>
+<span id="PgDnkey" class="Fkey">PgDn</span>
+<span id="Endkey" class="Fkey">End&nbsp</span>
+
+<!-- second row -->
+
+<br><br><br>
+<span id="Thiskey" class="key">&nbsp`&nbsp&nbsp</span>
+<span id="Onekey" class="key">1</span>
+<span id="Twokey" class="key">2</span>
+<span id="Threekey" class="key">3</span>
+<span id="Fourkey" class="key">4</span>
+<span id="Fivekey" class="key">5</span>
+<span id="Sixkey" class="key">6</span>
+<span id="Sevenkey" class="key">7</span>
+<span id="Eightkey" class="key">8</span>
+<span id="Ninekey" class="key">9</span>
+<span id="Zerokey" class="key">0</span>
+<span id="Hyphenkey" class="key">-</span>
+<span id="Equalskey" class="key">=</span>
+<span id="Backspacekey" class="key">&nbsp&nbspBackspace&nbsp&nbsp&nbsp</span>
+<span id="Numlockkey" class="key">NumLK</span>
+<span id="DivideKey" class="key">&nbsp/&nbsp</span>
+<span id="Multiplykey" class="key">&nbsp*&nbsp</span>
+<span id="Minuskey" class="key">&nbsp-&nbsp</span>
+
+<!-- third row -->
+
+<br><br><br>
+<span id="Tabkey" class="key">Tab&nbsp</span>
+<span id="Qkey" class="key">Q</span>
+<span id="Wkey" class="key">W</span>
+<span id="Ekey" class="key">E</span>
+<span id="Rkey" class="key">R</span>
+<span id="Tkey" class="key">T</span>
+<span id="Ykey" class="key">Y</span>
+<span id="Ukey" class="key">U</span>
+<span id="Ikey" class="key">I</span>
+<span id="Okey" class="key">O</span>
+<span id="Pkey" class="key">P</span>
+<span id="Opensquarebracketkey" class="key">[</span>
+<span id="Closesquarebracketkey" class="key">]</span>
+<span id="Enterkey" class="key">&nbsp&nbspEnter&nbsp&nbsp&nbsp</span>
+<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+<span id="Seven2key" class="key">&nbsp7&nbsp</span>
+<span id="Eight2key" class="key">&nbsp8&nbsp</span>
+<span id="Nine2key" class="key">&nbsp9&nbsp</span>
+<span id="Pluskey" class="key">&nbsp+&nbsp</span>
+
+<!-- forth row -->
+
+<br><br><br>
+<span id="Capslockkey" class="key">CapsLock</span>
+<span id="Akey" class="key">A</span>
+<span id="Skey" class="key">S</span>
+<span id="Dkey" class="key">D</span>
+<span id="Fkey" class="key">F</span>
+<span id="Gkey" class="key">G</span>
+<span id="Hkey" class="key">H</span>
+<span id="Jkey" class="key">J</span>
+<span id="Kkey" class="key">K</span>
+<span id="Lkey" class="key">L</span>
+<span id="Semicolonkey" class="key">;</span>
+<span id="Apostrophekey" class="key">'</span>
+<span id="Hashkey" class="key">#</span>
+<span id="Enter2key" class="key">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+<span id="Four2key" class="key">&nbsp4&nbsp</span>
+<span id="Five2key" class="key">&nbsp5&nbsp</span>
+<span id="Six2key" class="key">&nbsp6&nbsp</span>
+<span id="Plus2key" class="key">&nbsp&nbsp&nbsp&nbsp</span>
+
+<!-- fith row -->
+
+<br><br><br>
+<span id="Shiftkey" class="key">Shift</span>
+<span id="Backslashkey" class="key">\</span>
+<span id="Zkey" class="key">Z</span>
+<span id="Xkey" class="key">X</span>
+<span id="Ckey" class="key">C</span>
+<span id="Vkey" class="key">V</span>
+<span id="Bkey" class="key">B</span>
+<span id="Nkey" class="key">N</span>
+<span id="Mkey" class="key">M</span>
+<span id="Commakey" class="key">,</span>
+<span id="Fullstopkey" class="key">.</span>
+<span id="Forwardslashkey" class="key">/</span>
+<span id="Shift2key" class="key">&nbsp&nbspShift&nbsp&nbsp</span>
+<span>&nbsp</span>
+<span id="Upkey" class="Fkey">&nbsp&nbspUp&nbsp&nbsp</span>
+<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+<span id="One2key" class="key">&nbsp1&nbsp</span>
+<span id="Two2key" class="key">&nbsp2&nbsp</span>
+<span id="Three2key" class="key">&nbsp3&nbsp</span>
+<span id="Enter3key" class="key">Enter</span>
+
+<!-- sixth row -->
+
+<br><br><br>
+<span id="Ctrlkey" class="key">Ctrl&nbsp&nbsp&nbsp</span>
+<span id="Winkey" class="key">Win&nbsp</span>
+<span id="Altkey" class="key">Alt&nbsp</span>
+<span id="Spacebarkey" class="key">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSpace Bar&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+<span id="Altgrkey" class="key">Alt&nbsp</span>
+<span id="Oddkey" class="key">&nbsp</span>
+<span id="Ctrl2key" class="key">Ctrl&nbsp&nbsp</span>
+<span id="Leftkey" class="Fkey">Left&nbsp</span>
+<span id="Downkey" class="Fkey">Down</span>
+<span id="Rightkey" class="Fkey">Right</span>
+<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+<span id="Zero2key" class="key">&nbsp0&nbsp</span>
+<span id="Dotkey" class="key">&nbsp.&nbsp</span>
+<span id="Enter4key" class="key">&nbsp&nbsp&nbsp</span>
+</div>
+<br><br><br>
+<span id="Header2" onclick="openPanel('Panel')">Keyboard Test Compatibility Qwerks</span>
+<br>
+<div id="Panel" class="Panel">
+	<p>&nbsp&nbspThis keyboard Test is written in HTML5 and as a result is ncompatible with Internet Explorer versions 8 and below.</p>
+	<p>&nbsp&nbspIf number lock is active the number pad will return an alternate value key press.</p>
+	<p>&nbsp&nbspSome keys have alternate primary functions within the browser that are outside of the scope of this page.</p>
+	<ul>
+		<li>The windows key will open the start menu, a second press will return focus to the page.</li>
+		<li>The Fn key has no functionality within the browser so it does not appear in on this page</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+//[CDATA[
+
+window.addEventListener("keydown",keydownHandler,false);
+window.addEventListener("keyup",keyupHandler,false);
+
+openPanel('Panel');
+//]]
+</script>
+
+</body>
+</html>
